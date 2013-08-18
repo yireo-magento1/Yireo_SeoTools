@@ -1,0 +1,5 @@
+# modman for Yireo_SeoTools
+Yireo_SeoTools.xml     app/etc/modules/Yireo_SeoTools.xml
+code                   app/code/community/Yireo/SeoTools/
+#frontend/layout/*      app/design/frontend/base/default/layout/
+#frontend/template      app/design/frontend/base/default/template/seotools

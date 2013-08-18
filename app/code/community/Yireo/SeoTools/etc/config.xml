@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Yireo SeoTools for Magento 
+ *
+ * @package     Yireo_SeoTools
+ * @author      Yireo (http://www.yireo.com/)
+ * @copyright   Copyright (c) 2013 Yireo (http://www.yireo.com/)
+ * @license     Open Software License
+ */
+-->
+<config>
+
+    <modules>
+        <Yireo_SeoTools>
+            <version>0.0.1</version>
+        </Yireo_SeoTools>
+    </modules>
+
+    <global>
+        <blocks>
+            <seotools>
+                <class>Yireo_SeoTools_Block</class>
+            </seotools>
+        </blocks>
+
+        <helpers>
+            <seotools>
+                <class>Yireo_SeoTools_Helper</class>
+            </seotools>
+        </helpers>
+
+        <models>
+            <seotools>
+                <class>Yireo_SeoTools_Model</class>
+            </seotools>
+        </models>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Yireo_SeoTools>
+                    <files>
+                        <default>Yireo_SeoTools.csv</default>
+                    </files>
+                </Yireo_SeoTools>
+            </modules>
+        </translate>
+
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <seotools translate="title" module="seotools">
+                                            <title>SeoTools Section</title>
+                                        </seotools>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+    <default>
+        <catalog>
+            <seotools>
+                <support_key></support_key>
+            </seotools>
+        </catalog>
+    </default>
+
+</config>
