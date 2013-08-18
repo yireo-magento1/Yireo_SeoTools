@@ -37,6 +37,16 @@
         </models>
     </global>
 
+    <frontend>
+        <layout>
+            <updates>
+                <seotools>
+                    <file>seotools.xml</file>
+                </seotools>
+            </updates>
+        </layout>
+    </frontend>
+
     <adminhtml>
         <translate>
             <modules>
