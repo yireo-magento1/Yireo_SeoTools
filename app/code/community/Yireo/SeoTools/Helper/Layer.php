@@ -13,11 +13,9 @@
  */
 class Yireo_SeoTools_Helper_Layer extends Mage_Core_Helper_Abstract
 {
-    /*
+    /**
      * Method to get the current layered navigation filters
      *
-     * @access public
-     * @param null
      * @return array
      */
     public function getFilters()

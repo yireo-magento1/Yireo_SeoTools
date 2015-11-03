@@ -13,11 +13,9 @@
  */
 class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
 {
-    /*
+    /**
      * Method to get the document title
      *
-     * @access public
-     * @param null
      * @return string
      */
     public function getTitle()
@@ -29,10 +27,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         }
     }
 
-    /*
+    /**
      * Method to set the document title
      *
-     * @access public
      * @param string $title New document title to set
      * @return bool
      */
@@ -47,11 +44,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         return false;
     }
 
-    /*
+    /**
      * Method to get the document keywords
      *
-     * @access public
-     * @param null
      * @return array
      */
     public function getKeywords()
@@ -72,10 +67,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         return array();
     }
 
-    /*
+    /**
      * Method to set the document keywords
      *
-     * @access public
      * @param $keywords array List of keywords to insert
      * @param $prepend false Append or prepend the keywords
      * @param $overwrite false Overwrite current list of keywords
@@ -110,11 +104,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         return true;
     }
 
-    /*
+    /**
      * Method to get the current store name
      *
-     * @access public
-     * @param null
      * @return string
      */
     public function getStoreName()
@@ -122,11 +114,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         return Mage::getStoreConfig('system/store/name');
     }
 
-    /*
+    /**
      * Method to get the seperator
      *
-     * @access public
-     * @param null
      * @return string
      */
     public function getSeperator()
@@ -134,11 +124,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         return ' '.Mage::getStoreConfig('catalog/seo/title_separator').' ';
     }
 
-    /*
+    /**
      * Method to get the current category-title
      *
-     * @access public
-     * @param null
      * @return string
      */
     public function getCategoryTitle()
@@ -150,11 +138,9 @@ class Yireo_SeoTools_Help_Data extends Mage_Core_Helper_Abstract
         return null;
     }
 
-    /*
+    /**
      * Method to get the current product-title
      *
-     * @access public
-     * @param null
      * @return string
      */
     public function getProductTitle()
